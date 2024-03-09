@@ -12,13 +12,13 @@ class MyTexts {
 
 
   // -- OnBoarding Texts
-  static const String onBoardingTitle1 = "Choose your product";
-  static const String onBoardingTitle2 = "Select Payment Method";
-  static const String onBoardingTitle3 = "Deliver at your door step";
+  static const String onBoardingTitle1 = "The Ultimate App for Movie Lovers";
+  static const String onBoardingTitle2 = "Browse, Discover, and Watch";
+  static const String onBoardingTitle3 = "Create, Rate, and Review:";
 
-  static const String onBoardingSubTitle1 = "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!";
-  static const String onBoardingSubTitle2 = "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!";
-  static const String onBoardingSubTitle3 = "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
+  static const String onBoardingSubTitle1 = "Welcome to a World of Limitless Choices - Your Perfect Movie Awaits!";
+  static const String onBoardingSubTitle2 = "Explore thousands of movies and TV shows anytime, anywhere.";
+  static const String onBoardingSubTitle3 = "Watch movies and TV shows for free, or download them for offline viewing. Access exclusive content from Apple TV+ and other providers.";
 
 
   // -- Authentication Forms
