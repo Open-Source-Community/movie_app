@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:store_app/features/authentication/Screens/login/Screens/sgin_up_screen.dart';
 import 'package:store_app/utils/constants/sizes.dart';
 import 'package:store_app/utils/constants/text_strings.dart';
 
@@ -81,7 +83,9 @@ class LoginForm extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(()=>SignUpScreen());
+                    },
                     child: const Text(MyTexts.createAccount),
                   ),
                 ),

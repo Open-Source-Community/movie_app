@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:store_app/features/authentication/Screens/login/LoginScreen.dart';
+import 'package:store_app/features/authentication/Screens/login/Screens/LoginScreen.dart';
 
 class OnBordingController extends GetxController {
   static OnBordingController get instance => Get.find();

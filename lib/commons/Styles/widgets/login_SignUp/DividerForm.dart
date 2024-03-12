@@ -3,16 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:store_app/utils/constants/colors.dart';
 import 'package:store_app/utils/constants/text_strings.dart';
 
+import '../../../../utils/helpers/helper_functions.dart';
+
 class DividerForm extends StatelessWidget {
   const DividerForm({
     super.key,
-    required this.dark, required this.textDivider,
+     required this.textDivider,
   });
 
-  final bool dark;
+
   final String textDivider;
   @override
   Widget build(BuildContext context) {
+    final dark = MyHelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [

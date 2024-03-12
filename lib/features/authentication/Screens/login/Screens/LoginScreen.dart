@@ -7,8 +7,8 @@ import 'package:store_app/utils/constants/sizes.dart';
 import 'package:store_app/utils/constants/text_strings.dart';
 import 'package:store_app/utils/helpers/helper_functions.dart';
 
-import 'Widgets/HeaderLogin.dart';
-import 'Widgets/formFieldLogin.dart';
+import '../Widgets/HeaderLogin.dart';
+import '../Widgets/formFieldLogin.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -24,7 +24,7 @@ class LoginScreen extends StatelessWidget {
               children: [
                 HeaderLogin(dark: dark),
                 LoginForm(),
-                DividerForm(dark: dark,textDivider: MyTexts.orSignInWith.capitalize!),
+                DividerForm(textDivider: MyTexts.orSignInWith.capitalize!),
                 const SizedBox(
                   height: MySizes.spaceBtwItems,
                 ),
