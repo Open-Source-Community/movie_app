@@ -18,5 +18,6 @@ class MyImages {
   static const String onBoardingImage2 = "assets/images/on_boarding_images/Animation2.gif";
   static const String onBoardingImage3 = "assets/images/on_boarding_images/Animation3.gif";
 
+
 }
 

@@ -18,11 +18,11 @@ class HeaderLogin extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image(
-            height: 120,
-            image: AssetImage(dark
-                ? MyImages.lightAppLogo
-                : MyImages.darkAppLogo)),
+        // Image(
+        //     height: 120,
+        //     image: AssetImage(dark
+        //         ? MyImages.lightAppLogo
+        //         : MyImages.darkAppLogo)),
 
         Text(
           MyTexts.loginTitle,

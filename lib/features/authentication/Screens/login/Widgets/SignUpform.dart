@@ -3,11 +3,13 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:store_app/commons/Styles/widgets/login_SignUp/DividerForm.dart';
 import 'package:store_app/commons/Styles/widgets/login_SignUp/SocialButton.dart';
+import 'package:store_app/features/authentication/Screens/login/Screens/verify_email.dart';
 import 'package:store_app/utils/constants/colors.dart';
 import 'package:store_app/utils/constants/sizes.dart';
 
 import '../../../../../utils/constants/text_strings.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
+import '../Screens/LoginScreen.dart';
 
 class MySignUpForm extends StatelessWidget {
   const MySignUpForm({
@@ -97,6 +99,7 @@ class MySignUpForm extends StatelessWidget {
 
         //checkbox
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
                 width: 24,
@@ -140,12 +143,12 @@ class MySignUpForm extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-              onPressed: () {}, child: const Text(MyTexts.createAccount)),
+              onPressed: () => Get.to(() => const VerifyEmailScreen()),
+              child: const Text(MyTexts.createAccount)),
         ),
         const SizedBox(
           height: MySizes.spaceBtwSections,
         ),
-
       ],
     ));
   }
