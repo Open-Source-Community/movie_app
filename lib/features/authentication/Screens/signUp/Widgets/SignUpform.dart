@@ -3,13 +3,13 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:store_app/commons/Styles/widgets/login_SignUp/DividerForm.dart';
 import 'package:store_app/commons/Styles/widgets/login_SignUp/SocialButton.dart';
-import 'package:store_app/features/authentication/Screens/login/Screens/verify_email.dart';
+import 'package:store_app/features/authentication/Screens/signUp/Widgets/verify_email.dart';
 import 'package:store_app/utils/constants/colors.dart';
 import 'package:store_app/utils/constants/sizes.dart';
 
 import '../../../../../utils/constants/text_strings.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
-import '../Screens/LoginScreen.dart';
+import '../../login/Screens/LoginScreen.dart';
 
 class MySignUpForm extends StatelessWidget {
   const MySignUpForm({

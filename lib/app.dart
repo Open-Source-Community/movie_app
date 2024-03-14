@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:store_app/bindings/binding.dart';
-import 'package:store_app/features/authentication/Screens/on_boarding_screen.dart';
+import 'package:store_app/features/authentication/Screens/login/onBoarding/on_boarding_screen.dart';
 
 import 'utils/constants/text_strings.dart';
 import 'utils/theme/theme.dart';

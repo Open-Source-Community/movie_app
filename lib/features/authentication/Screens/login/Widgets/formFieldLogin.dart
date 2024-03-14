@@ -2,7 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:store_app/features/authentication/Screens/login/Screens/sgin_up_screen.dart';
+import 'package:store_app/features/authentication/Screens/forgetPassword/forget_password.dart';
+import 'package:store_app/features/authentication/Screens/signUp/screens/sgin_up_screen.dart';
 import 'package:store_app/utils/constants/sizes.dart';
 import 'package:store_app/utils/constants/text_strings.dart';
 
@@ -56,7 +57,7 @@ class LoginForm extends StatelessWidget {
 
                     //forgetpass
                     TextButton(
-                        onPressed: () {},
+                        onPressed: ()=>Get.to(()=>ForgetPassword()),
                         child: const Text(MyTexts.forgetPassword)),
                   ],
                 ),
