@@ -16,12 +16,15 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsetsDirectional.all(MySizes.defaultSpace),
           child: Column(
             children: [
+              const SizedBox(
+                height: MySizes.spaceBtwItems*3,
+              ),
               Text(
                 MyTexts.signupTitle,
                 style: Theme.of(context).textTheme.headlineMedium,

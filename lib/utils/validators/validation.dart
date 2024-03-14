@@ -1,5 +1,10 @@
+class MyValidator {
+  static String? vaildateEmptyText(String? fieldname, String? value) {
+    if (value == null || value.isEmpty) {
+      return "$fieldname is required";
+    }
+  }
 
-class TValidator {
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
       return 'Email is required.';

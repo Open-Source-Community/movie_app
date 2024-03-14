@@ -21,7 +21,12 @@ class LoginScreen extends StatelessWidget {
         child: Padding(
             padding: MySpaceStyle.paddingWithAppBarHight,
             child: Column(
+
               children: [
+                const SizedBox(
+                  height: MySizes.spaceBtwItems*3,
+                ),
+
                 HeaderLogin(dark: dark),
                 LoginForm(),
                 DividerForm(textDivider: MyTexts.orSignInWith.capitalize!),

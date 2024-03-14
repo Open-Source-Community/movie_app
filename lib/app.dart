@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:store_app/bindings/binding.dart';
 import 'package:store_app/features/authentication/Screens/on_boarding_screen.dart';
 
 import 'utils/constants/text_strings.dart';
@@ -16,6 +17,7 @@ class App extends StatelessWidget {
         theme: TAppTheme.lightTheme,
         darkTheme: TAppTheme.darkTheme,
         debugShowCheckedModeBanner: false,
+        initialBinding: GeneralBindings(),
         // initialBinding: GeneralBindings(),
         home: const OnBoardingScreen());
   }
