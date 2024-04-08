@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:get/get.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/services.dart';
+import 'package:store_app/commons/Widgets/loaders/loader.dart';
 
 // import '../popups/loaders.dart';
 
@@ -21,7 +22,7 @@ class NetworkManager extends GetxController {
 Future<void> _updateConnectionStatus(ConnectivityResult result) async {
     _connectionStatus.value = result;
     if (_connectionStatus.value == ConnectivityResult.none) {
-      // TLoaders.warningSnackBar(title: 'No Internet Connection');
+       Myloader.warningSnackbar(title: 'No Internet Connection');
     }
   }
 

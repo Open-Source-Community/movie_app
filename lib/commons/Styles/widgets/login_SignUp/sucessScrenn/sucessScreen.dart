@@ -23,7 +23,11 @@ class SucessScreen extends StatelessWidget {
           child: Column(
             children: [
               //image
+<<<<<<< HEAD
               Image(image:  AssetImage(image),width: MyHelperFunctions.screenWidth()*0.6,),
+=======
+              Image(image:  AssetImage(image),width: MyHelperFunctions.screenWidth()*0.6,height:MyHelperFunctions.screenHeight()*0.3),
+>>>>>>> 214d749 (firebase_signUp)
               const SizedBox(
                 height: MySizes.spaceBtwSections,
               ),

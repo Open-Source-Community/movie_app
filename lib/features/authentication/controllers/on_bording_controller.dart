@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:store_app/features/authentication/Screens/login/Screens/LoginScreen.dart';
 
 class OnBordingController extends GetxController {
@@ -17,6 +18,8 @@ class OnBordingController extends GetxController {
 
   void NextPage() {
     if (current_index.value == 2) {
+      final storage = GetStorage();
+      storage.write('isFirstTime', false);
       Get.offAll(LoginScreen());
     } else {
       int page = current_index.value + 1;

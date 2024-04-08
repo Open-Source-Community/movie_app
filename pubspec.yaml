@@ -26,7 +26,12 @@ dependencies:
   carousel_slider: ^4.2.1
   connectivity_plus: ^5.0.2
   cupertino_icons: ^1.0.2
-  firebase_storage: ^11.6.8
+  firebase_core: ^2.27.0
+  cloud_firestore:
+  firebase_auth:
+  firebase_storage:
+  flutter_native_splash: ^2.3.10
+
   flutter:
     sdk: flutter
   flutter_rating_bar: ^4.0.1
