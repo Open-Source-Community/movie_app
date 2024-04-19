@@ -32,13 +32,6 @@ class HomeScreen extends StatelessWidget {
             ),
             Row(
               children: [
-                // IconButton(
-                //   onPressed: () {},
-                //   icon: Icon(
-                //     Icons.cast,
-                //     color: Colors.white,
-                //   ),
-                // ),
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
@@ -53,56 +46,6 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          // SizedBox(
-          //   height: 100,
-          //   child: Row(
-          //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //     children: [
-          //       Expanded(
-          //         child: ElevatedButton(
-          //           onPressed: () {},
-          //           style: ElevatedButton.styleFrom(
-          //               backgroundColor: Colors.transparent),
-          //           child: const Text(
-          //             'TV Shows',
-          //             style: TextStyle(
-          //               color: Colors.white,
-          //               fontSize: 16,
-          //             ),
-          //           ),
-          //         ),
-          //       ),
-          //       Expanded(
-          //         child: ElevatedButton(
-          //           onPressed: () {},
-          //           style: ElevatedButton.styleFrom(
-          //               backgroundColor: Colors.transparent),
-          //           child: const Text(
-          //             'Movies',
-          //             style: TextStyle(
-          //               color: Colors.white,
-          //               fontSize: 16,
-          //             ),
-          //           ),
-          //         ),
-          //       ),
-          //       Expanded(
-          //         child: ElevatedButton(
-          //           onPressed: () {},
-          //           style: ElevatedButton.styleFrom(
-          //               backgroundColor: Colors.transparent),
-          //           child: const Text(
-          //             'Categories',
-          //             style: TextStyle(
-          //               color: Colors.white,
-          //               fontSize: 16,
-          //             ),
-          //           ),
-          //         ),
-          //       ),
-          //     ],
-          //   ),
-          // ),
           Container(
             margin: EdgeInsets.fromLTRB(30, 0, 30, 0),
             height: 500,

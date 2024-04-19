@@ -8,5 +8,8 @@ class Movie {
     required this.name,
     required this.image,
   });
-  
+  factory Movie.fromMap(map) =>
+      Movie(name: map['title'], image: map['poster_path']);
+ 
+  Map<String, dynamic> toMap() => {'title': name, 'poster_path': image};
 }
