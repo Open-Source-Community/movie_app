@@ -51,7 +51,7 @@ class _MovieAppState extends State<MovieApp> {
   }
   static List<Widget> _widgets = <Widget>[
     MyHomePage(),
-    CategoryScreen(),
+    // CategoryScreen(),
     fav_screen(),
     SettingsScreen()
   ];
@@ -76,10 +76,10 @@ class _MovieAppState extends State<MovieApp> {
             label: "Home",
             // backgroundColor: Colors.white,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.category),
-            label: "Category",
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.category),
+          //   label: "Category",
+          // ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             label: "WishList",

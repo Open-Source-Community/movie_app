@@ -2,11 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:movie_app/models/movie.dart';
+import 'package:movie_app/models/movie_model.dart';
 import 'package:movie_app/widgets/movie_card.dart';
 
 class CategoryWidget extends StatelessWidget {
   final String categoryName;
-  final List<Movie> categoryMovies;
+  final List<Movie_model> categoryMovies;
   const CategoryWidget(
       {super.key, required this.categoryName, required this.categoryMovies});
 

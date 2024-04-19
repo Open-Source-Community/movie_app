@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/models/movie.dart';
+import 'package:movie_app/models/movie_model.dart';
 
 class MovieCard extends StatelessWidget {
-  final Movie movie;
+  final Movie_model movie;
   const MovieCard({super.key, required this.movie});
 
   @override
@@ -16,7 +17,13 @@ class MovieCard extends StatelessWidget {
         width: 125,
         child: Stack(
           children: [
-            SizedBox(child: movie.image),
+            SizedBox(
+                child: Image.network(
+              movie.posterPath,
+              fit: BoxFit.fill,
+              height: 1000,
+              width: 1000,
+            )),
             const Icon(Icons.movie),
           ],
         ),
