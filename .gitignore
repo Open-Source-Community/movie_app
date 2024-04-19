@@ -41,7 +41,4 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-/lib/screens/home_screen_v2.dart
-/lib/screens/movie_detail_screen.dart
-/lib/services/API
-/lib/services/Database helper.dart
+/lib/screens/home_screen.dart

@@ -1,10 +1,14 @@
 // ignore_for_file: prefer_const_constructors, prefer_final_fields, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:movie_app/models/movie_model.dart';
 import 'package:movie_app/screens/category_screen.dart';
-import 'package:movie_app/screens/home_screen.dart';
+import 'package:movie_app/screens/favourite_screen.dart';
+import 'package:movie_app/screens/home_screen_v2.dart';
 import 'package:movie_app/screens/settings_screen.dart';
-import 'package:movie_app/screens/wishlist_screen.dart';
+import 'package:movie_app/services/API/api.dart';
+import 'package:movie_app/services/Database%20helper.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -39,10 +43,16 @@ class MovieApp extends StatefulWidget {
 class _MovieAppState extends State<MovieApp> {
   int _selectedIndex = 0;
 
+
+  @override
+  void initState() {
+    super.initState();
+    Database_helper.instance.createDatabase();
+  }
   static List<Widget> _widgets = <Widget>[
-    HomeScreen(),
+    MyHomePage(),
     CategoryScreen(),
-    WishlistScreen(),
+    fav_screen(),
     SettingsScreen()
   ];
 
